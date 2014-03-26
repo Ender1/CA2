@@ -1,1 +1,111 @@
-<p>Some test text</p>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>CA2</title>
+
+  <link rel="shortcut icon" type="image/png" href="images/jasmine_favicon.png">
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style-wide.css">
+  <link rel="stylesheet" type="text/css" href="css/style-narrow.css">
+  <link rel="stylesheet" type="text/css" href="css/style-mobile.css">
+  
+  <!-- skel -->
+  <script type="text/javascript" src="js/skel.min.js"></script>
+
+  <script type="text/javascript" src="js/jasmine.js"></script>
+  <script type="text/javascript" src="js/boot.js"></script>
+  <script type="text/javascript" src="js/console.js"></script>
+  <script type="text/javascript" src="js/jasmine-html.js"></script>
+
+  <!-- include source files here... -->
+  <script type="text/javascript" src="js/Player.js"></script>
+  <script type="text/javascript" src="js/Song.js"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/javascript" src="js/SpecHelper.js"></script>
+  <script type="text/javascript" src="js/PlayerSpec.js"></script>
+  
+  <script src="skel.min.js">
+    {
+      prefix: "style",
+      resetCSS: true,
+      boxModel: "border",
+      grid: { gutters: 30 },
+      breakpoints: {
+        wide: { range: "1200-", containers: 1140, grid: { gutters: 50 } },
+A breakpoint. In this case it's called "wide", applies when the viewport width is at least 1200px, uses 1140px containers, and 50px gutters on grids (overriding the global 30px we set earlier).
+        narrow: { range: "481-1199", containers: 960 },
+        mobile: { range: "-480", containers: "fluid", lockViewport: true, grid: { collapse: true } }
+      }
+    }
+    </script>
+
+</head>
+
+<body>
+<div class="container">
+      <!-- Header -->
+        <div id="header" class="row">
+          <div class="4u">
+            <h1>Example</h1>
+          </div>
+          <nav id="nav" class="8u">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      <!-- Hero -->
+        <section id="hero">
+          <h2>Hello world.</h2>
+          <p>Lorem ipsum dolor sit amet sed magna etiam adipiscing.</p>
+          <a href="#" class="button">Get Started</a>
+        </section>
+      <!-- Features -->
+        <div class="row">
+          <section class="4u">
+            <h1>Something Cool</h1>
+			<iframe width="560" height="315" src="http://www.youtube.com/embed/FHtvDA0W34I" frameborder="0" allowfullscreen></iframe>
+          </section>
+          <section class="4u">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet sed magna etiam adipiscing elit.
+            adipiscing elit nec fringilla urna tempor in. Cras et sodales
+            consectetur viverra lorem ipsum.</p>
+          </section>
+          <section class="4u">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet sed magna etiam adipiscing elit.
+            adipiscing elit nec fringilla urna tempor in. Cras et sodales
+            consectetur viverra lorem ipsum.</p>
+          </section>
+        </div>
+      <!-- Main -->
+        <div class="row">
+          <!-- Content -->
+            <section class="8u">
+              <h2>Heading</h2>
+              <p>Lorem ipsum dolor sit amet sed magna etiam adipiscing elit.
+              adipiscing elit nec fringilla urna tempor in. Cras et sodales
+              consectetur viverra lorem ipsum. Lorem ipsum dolor sit amet
+              sed magna etiam adipiscing elit adipiscing elit nec fringilla
+              urna tempor in. Cras et sodales consectetur viverra.</p>
+            </section>
+          <!-- Sidebar -->
+            <section class="4u">
+              <h2>Heading</h2>
+              <p>Lorem ipsum dolor sit amet sed magna etiam adipiscing elit.
+              adipiscing elit nec fringilla urna tempor in. Cras et sodales
+              consectetur viverra lorem ipsum.</p>
+            </section>
+        </div>
+      <!-- Footer -->
+        <div id="footer">
+          © Example. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
